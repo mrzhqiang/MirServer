@@ -1,0 +1,11 @@
+[@所有]
+{
+
+[@MagSelfFunc127]
+#IF
+;Equal N125 1
+#ACT
+SendMsg 5 已获得此技能效果，小退可重新获取！
+break
+
+}

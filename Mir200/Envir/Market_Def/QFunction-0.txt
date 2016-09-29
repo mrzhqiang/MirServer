@@ -1,7 +1,52 @@
-
-
 ( @@sendmsg @storage @getback @buy @sell @repair @s_repair @@offlinemsg @getnextpage @getPreviouspage @@InPutString @@useitemname @@InputInteger)
 %100
+
+;这里使用加载机制，减少文件大小，灵活配置
+
+;可以灵活配置：基础、高级、所有
+#CALLX [\\技能触发\战士.txt] @所有
+#CALLX [\\技能触发\法师.txt] @所有
+#CALLX [\\技能触发\道士.txt] @所有
+#CALLX [\\技能触发\通用.txt] @所有
+
+#CALLX [\\物品触发\战士秘籍.txt] @所有
+#CALLX [\\物品触发\法师秘籍.txt] @所有
+#CALLX [\\物品触发\道士秘籍.txt] @所有
+#CALLX [\\物品触发\通用秘籍.txt] @所有
+
+;杀死怪物触发
+[@KillMonster]
+#IF
+Large N0 50
+#ACT
+goto @判断触发知识
+break
+
+[@判断触发知识]
+#IF
+Small N100 20
+#ACT
+Inc N100 1
+break
+
+#IF
+Equal N100 20
+#ACT
+Mov N100 0
+goto @随机获得知识
+Break
+
+[@随机获得知识]
+#IF
+Random 10
+#ACT
+ChangeGameGird + 2
+SendMsg 6 人品爆发，你的知识增加了2点！
+#ELSEACT
+ChangeGameGird + 1
+SendMsg 6 你似乎有所领悟，增加1点知识！
+break
+
 
 [@Member]
 #CALLX [\\游戏配置\帮助系统\目录.txt] @目录

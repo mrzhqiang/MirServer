@@ -1,0 +1,206 @@
+[@所有]
+{
+
+;战斗精通
+
+[@StdmodeFunc999]
+#IF
+CheckSkill 战斗精通 = 10
+#ACT
+give [秘籍]战斗精通 1
+SendMsg 5 当前技能已满级，无法再提升
+break
+
+#IF
+CheckSkill 战斗精通 ? 0
+#ACT
+goto @检查等级999
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 你好像没有学会这个技能
+break
+
+[@检查等级999]
+#IF
+CheckSkill 战斗精通 = 0
+#ACT
+goto @升级9990
+break
+
+#IF
+CheckSkill 战斗精通 = 1
+#ACT
+goto @升级9991
+break
+
+#IF
+CheckSkill 战斗精通 = 2
+#ACT
+goto @升级9992
+break
+
+#IF
+CheckSkill 战斗精通 = 3
+#ACT
+goto @升级9993
+break
+
+#IF
+CheckSkill 战斗精通 = 4
+#ACT
+goto @升级9994
+break
+
+#IF
+CheckSkill 战斗精通 = 5
+#ACT
+goto @升级9995
+break
+
+#IF
+CheckSkill 战斗精通 = 6
+#ACT
+goto @升级9996
+break
+
+#IF
+CheckSkill 战斗精通 = 7
+#ACT
+goto @升级9997
+break
+
+#IF
+CheckSkill 战斗精通 = 8
+#ACT
+goto @升级9998
+break
+
+#IF
+CheckSkill 战斗精通 = 9
+#ACT
+goto @升级9999
+break
+
+
+[@升级9990]
+#IF
+CheckGameGird ? 10
+#ACT
+ChangeGameGird - 10
+SkillLevel 战斗精通 = 1
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为1级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要10点知识
+break
+
+[@升级9991]
+#IF
+CheckGameGird ? 20
+#ACT
+ChangeGameGird - 20
+SkillLevel 战斗精通 = 2
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为2级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要20点知识
+break
+
+[@升级9992]
+#IF
+CheckGameGird ? 30
+#ACT
+ChangeGameGird - 30
+SkillLevel 战斗精通 = 3
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为3级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要30点知识
+break
+
+[@升级9993]
+#IF
+CheckGameGird ? 40
+#ACT
+ChangeGameGird - 40
+SkillLevel 战斗精通 = 4
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为4级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要40点知识
+break
+
+[@升级9994]
+#IF
+CheckGameGird ? 50
+#ACT
+ChangeGameGird - 50
+SkillLevel 战斗精通 = 5
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为5级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要50点知识
+break
+
+[@升级9995]
+#IF
+CheckGameGird ? 60
+#ACT
+ChangeGameGird - 60
+SkillLevel 战斗精通 = 6
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为6级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要60点知识
+break
+
+[@升级9996]
+#IF
+CheckGameGird ? 70
+#ACT
+ChangeGameGird - 70
+SkillLevel 战斗精通 = 7
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为7级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要70点知识
+break
+
+[@升级9997]
+#IF
+CheckGameGird ? 80
+#ACT
+ChangeGameGird - 80
+SkillLevel 战斗精通 = 8
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为8级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要80点知识
+break
+
+[@升级9998]
+#IF
+CheckGameGird ? 90
+#ACT
+ChangeGameGird - 90
+SkillLevel 战斗精通 = 9
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为9级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要90点知识
+break
+
+[@升级9999]
+#IF
+CheckGameGird ? 100
+#ACT
+ChangeGameGird - 100
+SkillLevel 战斗精通 = 10
+SendMsg 0 恭喜【<$USERNAME>】的【战斗精通】提升为满级
+#ELSEACT
+give [秘籍]战斗精通 1
+SendMsg 5 提升失败！需要100点知识
+break
+
+
+}

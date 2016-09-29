@@ -1,0 +1,217 @@
+[@所有]
+{
+
+[@MagSelfFunc125]
+#IF
+Equal N125 1
+#ACT
+SendMsg 5 已获得此技能效果，小退可重新获取！
+break
+
+#IF
+CheckSkill 钢铁意志 = 0
+#ACT
+ChangeHumAbility 1 + 5
+ChangeHumAbility 2 + 5
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了5点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 1
+#ACT
+ChangeHumAbility 1 + 10
+ChangeHumAbility 2 + 10
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了10点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 2
+#ACT
+ChangeHumAbility 1 + 15
+ChangeHumAbility 2 + 15
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了15点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 3
+#ACT
+ChangeHumAbility 1 + 20
+ChangeHumAbility 2 + 20
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了20点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 4
+#ACT
+ChangeHumAbility 1 + 25
+ChangeHumAbility 2 + 25
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了25点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 5
+#ACT
+ChangeHumAbility 1 + 30
+ChangeHumAbility 2 + 30
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了30点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 6
+#ACT
+ChangeHumAbility 1 + 35
+ChangeHumAbility 2 + 35
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了35点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 7
+#ACT
+ChangeHumAbility 1 + 40
+ChangeHumAbility 2 + 40
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了40点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 8
+#ACT
+ChangeHumAbility 1 + 45
+ChangeHumAbility 2 + 45
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了45点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 9
+#ACT
+ChangeHumAbility 1 + 50
+ChangeHumAbility 2 + 50
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了50点！
+Break
+
+#IF
+CheckSkill 钢铁意志 = 10
+#ACT
+ChangeHumAbility 1 + 55
+ChangeHumAbility 2 + 55
+Mov N125 1
+SendMsg 5 将毅力融入筋骨，练就钢铁般的意志，您的防御提升了55点！
+Break
+
+
+[@MagSelfFunc126]
+#IF
+Equal N126 1
+#ACT
+SendMsg 5 已获得此技能效果，小退可重新获取！
+break
+
+#IF
+CheckSkill 元素无视 = 0
+#ACT
+ChangeHumAbility 3 + 5
+ChangeHumAbility 4 + 5
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了5点！
+Break
+
+#IF
+CheckSkill 元素无视 = 1
+#ACT
+ChangeHumAbility 3 + 10
+ChangeHumAbility 4 + 10
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了10点！
+Break
+
+#IF
+CheckSkill 元素无视 = 2
+#ACT
+ChangeHumAbility 3 + 15
+ChangeHumAbility 4 + 15
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了15点！
+Break
+
+#IF
+CheckSkill 元素无视 = 3
+#ACT
+ChangeHumAbility 3 + 20
+ChangeHumAbility 4 + 20
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了20点！
+Break
+
+#IF
+CheckSkill 元素无视 = 4
+#ACT
+ChangeHumAbility 3 + 25
+ChangeHumAbility 4 + 25
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了25点！
+Break
+
+#IF
+CheckSkill 元素无视 = 5
+#ACT
+ChangeHumAbility 3 + 30
+ChangeHumAbility 4 + 30
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了30点！
+Break
+
+#IF
+CheckSkill 元素无视 = 6
+#ACT
+ChangeHumAbility 3 + 35
+ChangeHumAbility 4 + 35
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了35点！
+Break
+
+#IF
+CheckSkill 元素无视 = 7
+#ACT
+ChangeHumAbility 3 + 40
+ChangeHumAbility 4 + 40
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了40点！
+Break
+
+#IF
+CheckSkill 元素无视 = 8
+#ACT
+ChangeHumAbility 3 + 45
+ChangeHumAbility 4 + 45
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了45点！
+Break
+
+#IF
+CheckSkill 元素无视 = 9
+#ACT
+ChangeHumAbility 3 + 50
+ChangeHumAbility 4 + 50
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了50点！
+Break
+
+#IF
+CheckSkill 元素无视 = 10
+#ACT
+ChangeHumAbility 3 + 55
+ChangeHumAbility 4 + 55
+Mov N126 1
+SendMsg 5 以意志锻炼精神，视魔法如无物，您的魔御提升了55点！
+Break
+
+}
