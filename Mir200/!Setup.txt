@@ -1,5 +1,5 @@
 [Server]
-ServerName=À¼´ï¶û
+ServerName=µ¥»ú
 ServerNumber=0
 VentureServer=FALSE
 TestServer=TRUE
