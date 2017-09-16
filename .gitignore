@@ -1,0 +1,14 @@
+/.idea
+/DBServer/Backup
+/DBServer/ClearLog
+/DBServer/Connection
+/DBServer/Log
+/LoginSrv/Chrlog
+/LoginSrv/Countlog
+/LoginSrv/DB
+/LoginSrv/GameWFolder
+/LoginSrv/IdLog
+/LogServer/BaseDir
+/Mir200/ConLog
+/Mir200/EMail
+/Mir200/Log
